@@ -16,9 +16,7 @@ pipeline {
 
     // Build
     stage('Build') {
-      agent {
-        label 'node'
-      }
+    
       steps {
         deleteDir()
         checkout scm
